@@ -8,4 +8,4 @@ mandar a um endpoint específico como uma requisição do tipo POST, com duas li
 ordenadas: uma com os 7 artistas com mais seguidores e outra com 5 artistas
 com maior índice de popularidade.
 
-<b>Obs:</b> Para testar o código é necessário a instalação do Node.js e bibliotecas necessárias
+<b>Obs:</b> Para testar o código é necessário a instalação do Node.js, além das bibliotecas e módulos necessários
