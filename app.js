@@ -72,9 +72,13 @@ const maisPopulares = artistasPorPopularidade.slice(0, 5);
 
 // Cria um objeto com as informações dos rankings
 const rankings = {
-  maisSeguidores: maisSeguidores.map(a => ({ nome: a.name, seguidores: a.followers.total, popularidade: a.popularity })),
-  maisPopulares: maisPopulares.map(a => ({ nome: a.name, seguidores: a.followers.total, popularidade: a.popularity }))
+  github_url: 'https://github.com/MateusJunio016/spotify-web-api',
+  nome: 'Mateus Miranda',
+  follower_ranking: maisSeguidores.map(a => ({ artist_name: a.name, followers: a.followers.total})),
+  popularity_ranking: maisPopulares.map(a => ({ nome: a.name, popularity: a.popularity })),
 };
+
+//console.log(rankings);
 
 // Envia os rankings para o endpoint desejado como uma requisição POST
 axios.post('https://psel-solution-automation-cf-ubqz773kaq-uc.a.run.app?access_token=UcAxu7xAh02D', rankings)
